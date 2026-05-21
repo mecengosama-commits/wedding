@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>دعوة زفاف</title>
+
+<style>
+
+body{
+background:#000;
+font-family:Tajawal;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.card{
+max-width:500px;
+margin:auto;
+background:#111;
+border-radius:20px;
+padding:20px;
+border:1px solid gold;
+}
+
+img{
+width:100%;
+border-radius:20px;
+}
+
+h1{
+color:gold;
+}
+
+.btn{
+display:block;
+background:gold;
+color:black;
+padding:15px;
+margin:10px 0;
+border-radius:12px;
+text-decoration:none;
+font-weight:bold;
+}
+
+#countdown{
+font-size:22px;
+color:gold;
+margin:20px 0;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<img src="photo.jpg">
+
+<h1>بسمة & أسامه سليم</h1>
+
+<p>
+يشرفنا حضوركم حفل زفافنا
+</p>
+
+<div id="countdown"></div>
+
+<a class="btn"
+href="https://wa.me/201557854290">
+تأكيد الحضور واتساب
+</a>
+
+<a class="btn"
+href="https://maps.app.goo.gl/pN2FpNUkCYCQevHa6">
+فتح اللوكيشن
+</a>
+
+<audio controls autoplay>
+<source src="music.mp3" type="audio/mpeg">
+</audio>
+
+</div>
+
+<script>
+
+var countDownDate =
+new Date("Jul 17, 2026 20:00:00").getTime();
+
+var x = setInterval(function() {
+
+var now = new Date().getTime();
+
+var distance = countDownDate - now;
+
+var days =
+Math.floor(distance / (1000 * 60 * 60 * 24));
+
+var hours =
+Math.floor((distance %
+(1000 * 60 * 60 * 24))
+/ (1000 * 60 * 60));
+
+var minutes =
+Math.floor((distance %
+(1000 * 60 * 60))
+/ (1000 * 60));
+
+var seconds =
+Math.floor((distance %
+(1000 * 60))
+/ 1000);
+
+document.getElementById("countdown").innerHTML =
+days + " يوم "
++ hours + " ساعة "
++ minutes + " دقيقة "
++ seconds + " ثانية ";
+
+}, 1000);
+
+</script>
+
+</body>
+</html>
